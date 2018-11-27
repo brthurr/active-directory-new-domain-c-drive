@@ -13,4 +13,3 @@ Click the button below to deploy
 <a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Fbrthurr%2Factive-directory-new-domain-c-drive%2Fmaster%2Fazuredeploy.json" target="_blank">
     <img src="http://armviz.io/visualizebutton.png"/>
 </a>
-https://raw.githubusercontent.com/brthurr/active-directory-new-domain-c-drive/master/azuredeploy.json
