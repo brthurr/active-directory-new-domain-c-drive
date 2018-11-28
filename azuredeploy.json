@@ -52,7 +52,21 @@
         "adSubnetAddressPrefix": "10.0.0.0/24",
         "publicIPAddressName": "adPublicIP",
         "networkSecurityGroupName": "adNSG",
-        "nsgId": "[resourceId(resourceGroup().name, 'Microsoft.Network/networkSecurityGroups', variables('networkSecurityGroupName'))]"
+        "nsgId": "[resourceId(resourceGroup().name, 'Microsoft.Network/networkSecurityGroups', variables('networkSecurityGroupName'))]",
+        "networkSecurityGroupRules": {
+              "name": "RDP",
+              "properties": [ {
+                  "priority": 300,
+                  "protocol": "TCP",
+                  "access": "Allow",
+                  "direction": "Inbound",
+                  "sourceAddressPrefix": "*",
+                  "sourcePortRange": "*",
+                  "destinationAddressPrefix": "*",
+                  "destinationPortRange": "3389"
+              }
+              ]
+        }
     },
     "resources": [
         {
