@@ -40,12 +40,6 @@
           "metadata": {
             "description": "Location for all resources."
           }
-        },
-        "networkSecurityGroupName": {
-          "type": "string"
-        },
-        "networkSecurityGroupRules": {
-          "type": "array"
         }
     },
     "variables": {
